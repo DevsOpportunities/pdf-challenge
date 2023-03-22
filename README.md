@@ -9,6 +9,55 @@ Cria uma branch seguindo o padrão *(nome)-(tecnologia)-(libraria)*, exemplos:
 ## Como implementar?
 O teu projecto deve implementar uma interface Swagger com um metodo POST com nome do template, que recebe os dados a serem renderizados no PDF, a modo que cada request, vai gerar um PDF com os dados enviados no mesmo.
 
+### Rotas dos Endpoints
+![image](https://user-images.githubusercontent.com/11561779/226875299-d6e569da-f641-4688-904f-d32c898987b8.png)
+
+### Conteudo do request
+![image](https://user-images.githubusercontent.com/11561779/226875445-7d6a9be9-c116-4c72-86d4-c63b814d6276.png)
+
+```
+{
+  "companyName": "string",
+  "companyAddress": "string",
+  "clientName": "string",
+  "clientAddress": "string",
+  "items": [
+    {
+      "quantity": 99999,
+      "description": "string",
+      "price": 999999999
+    }
+  ],
+  "invoiceNumber": "string",
+  "date": "2023-03-22T10:27:37.571Z",
+  "po": "string",
+  "dueDate": "2023-03-22T10:27:37.571Z"
+}
+```
+### chamada via CURL
+```
+curl -X 'POST' \
+  'http://localhost:5000/Invoice/Invoice1' \
+  -H 'accept: */*' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "companyName": "string",
+  "companyAddress": "string",
+  "clientName": "string",
+  "clientAddress": "string",
+  "items": [
+    {
+      "quantity": 99999,
+      "description": "string",
+      "price": 999999999
+    }
+  ],
+  "invoiceNumber": "string",
+  "date": "2023-03-22T10:30:28.013Z",
+  "po": "string",
+  "dueDate": "2023-03-22T10:30:28.013Z"
+}'
+```
 
 ## Modo de publicação
 O projecto deve contar com um ficheiro dockerfile, que deve permitir criar uma imagem docker, esta imagem vai ser publicada no dockerhub facilitando assim os testes dentro da comunidade.
