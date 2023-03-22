@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PdfChallenge.Docs", "src\PdfChallenge.Docs\PdfChallenge.Docs.csproj", "{9DC2C11F-EA4D-4A44-9D24-EF57409D1BEE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PdfChallenge.Api", "src\PdfChallenge.Api\PdfChallenge.Api.csproj", "{ED439DE3-25B7-444F-ADB0-B2A15931F731}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9DC2C11F-EA4D-4A44-9D24-EF57409D1BEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DC2C11F-EA4D-4A44-9D24-EF57409D1BEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DC2C11F-EA4D-4A44-9D24-EF57409D1BEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DC2C11F-EA4D-4A44-9D24-EF57409D1BEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED439DE3-25B7-444F-ADB0-B2A15931F731}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED439DE3-25B7-444F-ADB0-B2A15931F731}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED439DE3-25B7-444F-ADB0-B2A15931F731}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED439DE3-25B7-444F-ADB0-B2A15931F731}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
